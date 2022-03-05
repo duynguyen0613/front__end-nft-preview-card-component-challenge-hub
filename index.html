@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  Equilibrium #3429
+    <link rel="stylesheet" href="css/style.css" />
 
-  Our Equilibrium collection promotes balance and calm.
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__img-box">
+        <img src="./images/image-equilibrium.jpg" alt="" />
+      </div>
+      <div class="card__content">
+        <div class="title">Equilibrium #3429</div>
+        <div class="text">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+      </div>
+      <div class="card__data">
+        <div class="card__data--left">
+          <img src="./images/icon-ethereum.svg" alt="" />
+          <p>0.041ETH</p>
+        </div>
+        <div class="card__data--right">
+          <img src="./images/icon-clock.svg" alt="" />
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="card__seperator"></div>
+      <div class="card__author">
+        <div class="card__author-img-box">
+          <img src="./images/image-avatar.png" alt="avater" />
+        </div>
+        <p>Creation of <span class="card__author--name">Jules Wyvern</span></p>
+      </div>
+    </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
